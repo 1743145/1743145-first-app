@@ -34,6 +34,8 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnEXIT = new System.Windows.Forms.Button();
+            this.btnRadio = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +70,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(83, 73);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(100, 22);
             this.txtPassword.TabIndex = 3;
             // 
@@ -95,11 +98,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login to IE322";
             // 
+            // btnEXIT
+            // 
+            this.btnEXIT.Location = new System.Drawing.Point(101, 263);
+            this.btnEXIT.Name = "btnEXIT";
+            this.btnEXIT.Size = new System.Drawing.Size(75, 23);
+            this.btnEXIT.TabIndex = 5;
+            this.btnEXIT.Text = "EXIT";
+            this.btnEXIT.UseVisualStyleBackColor = true;
+            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
+            // 
+            // btnRadio
+            // 
+            this.btnRadio.Location = new System.Drawing.Point(527, 28);
+            this.btnRadio.Name = "btnRadio";
+            this.btnRadio.Size = new System.Drawing.Size(75, 23);
+            this.btnRadio.TabIndex = 6;
+            this.btnRadio.Text = "Radio";
+            this.btnRadio.UseVisualStyleBackColor = true;
+            this.btnRadio.Click += new System.EventHandler(this.btnRadio_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRadio);
+            this.Controls.Add(this.btnEXIT);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -118,6 +143,8 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnEXIT;
+        private System.Windows.Forms.Button btnRadio;
     }
 }
 
